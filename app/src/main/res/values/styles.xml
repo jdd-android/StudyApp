@@ -16,7 +16,6 @@
     <style name="Button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">45dp</item>
-        <item name="android:layout_margin">@dimen/spacing_large</item>
         <item name="android:textSize">@dimen/app_text_size_normal</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:gravity">center</item>

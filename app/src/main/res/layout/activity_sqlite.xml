@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.jdd.sample.studyapp.MainActivity">
+    tools:context="com.jdd.sample.studyapp.ui.SqliteActivity">
 
     <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -16,47 +16,46 @@
         android:elevation="4dp"
         app:titleTextColor="@color/appTextColorPrimary" />
 
-    <Button
+    <EditText
+        android:id="@+id/et_key"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="goDownloadActivity"
-        android:text="go download service activity" />
+        android:hint="name" />
 
-    <Button
+    <EditText
+        android:id="@+id/et_value"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="goBroadcastActivity"
-        android:text="go broadcast activity" />
+        android:hint="age"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tv_query_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <Button
+        android:id="@+id/btn_insert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="goProviderActivity"
-        android:text="go provider activity" />
+        android:text="INSERT" />
 
-    <TextView
-        style="@style/Button"
-        android:onClick="goDataActivity"
-        android:text="go data activity" />
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE" />
 
-    <TextView
-        style="@style/Button"
-        android:onClick="goListActivity"
-        android:text="go list activity" />
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPDATE" />
 
-    <TextView
-        style="@style/Button"
-        android:onClick="goJsonActivity"
-        android:text="go json activity" />
-
-    <TextView
-        style="@style/Button"
-        android:onClick="goFragmentActivity"
-        android:text="go fragment activity" />
-
-    <TextView
-        style="@style/Button"
-        android:onClick="goSqliteActivity"
-        android:text="go sqlite activity" />
+    <Button
+        android:id="@+id/btn_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUERY" />
 
 </LinearLayout>

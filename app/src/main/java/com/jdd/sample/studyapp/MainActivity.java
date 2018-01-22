@@ -10,8 +10,11 @@ import com.jdd.sample.studyapp.data.Person;
 import com.jdd.sample.studyapp.ui.BroadcastActivity;
 import com.jdd.sample.studyapp.ui.DataDisplayActivity;
 import com.jdd.sample.studyapp.ui.DownloadActivity;
+import com.jdd.sample.studyapp.ui.FragmentActivity;
+import com.jdd.sample.studyapp.ui.JsonActivity;
 import com.jdd.sample.studyapp.ui.ListActivity;
 import com.jdd.sample.studyapp.ui.ProviderActivity;
+import com.jdd.sample.studyapp.ui.SqliteActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,6 +55,19 @@ public class MainActivity extends AppCompatActivity {
     public void goListActivity(View view) {
         startActivity(new Intent(this, ListActivity.class));
     }
+
+    public void goJsonActivity(View view) {
+        startActivity(new Intent(this, JsonActivity.class));
+    }
+
+    public void goFragmentActivity(View view) {
+        startActivity(new Intent(this, FragmentActivity.class));
+    }
+
+    public void goSqliteActivity(View view) {
+        startActivity(new Intent(this, SqliteActivity.class));
+    }
+
 
     @Override
     protected void onRestart() {
