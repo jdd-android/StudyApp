@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jdd.sample.studyapp.ui.JsonActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 帧动画 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="帧动画" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_coin_loading"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <Button
+                    android:id="@+id/btn_tween_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始" />
+
+                <Button
+                    android:id="@+id/btn_tween_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="停止" />
+
+            </LinearLayout>
+
+            <!-- 补间动画 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="补间动画" />
+
+            <View
+                android:id="@+id/viewTween"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="32dp">
+
+                <Button
+                    android:id="@+id/alpha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="alpha" />
+
+                <Button
+                    android:id="@+id/translate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="translate" />
+
+                <Button
+                    android:id="@+id/rotate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="rotate" />
+
+                <Button
+                    android:id="@+id/scale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="scale" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_tween_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="补间动画组合" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/alpha_xml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="alpha xml" />
+
+                <Button
+                    android:id="@+id/translate_xml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="translate xml" />
+
+                <Button
+                    android:id="@+id/rotate_xml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="rotate xml" />
+
+                <Button
+                    android:id="@+id/scale_xml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="scale xml" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_tween_set_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="补间动画组合 xml" />
+
+            <!-- 属性动画 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="属性动画" />
+
+            <View
+                android:id="@+id/object_animation"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/btn_object_animation_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="属性动画开始" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

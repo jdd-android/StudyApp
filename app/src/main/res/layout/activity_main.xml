@@ -59,4 +59,9 @@
         android:onClick="goSqliteActivity"
         android:text="go sqlite activity" />
 
+    <TextView
+        style="@style/Button"
+        android:onClick="goAnimationActivity"
+        android:text="go animation activity" />
+
 </LinearLayout>

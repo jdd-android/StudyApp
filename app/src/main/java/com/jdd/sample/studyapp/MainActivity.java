@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
+import com.jdd.sample.studyapp.animation.AnimationActivity;
 import com.jdd.sample.studyapp.data.Person;
 import com.jdd.sample.studyapp.ui.BroadcastActivity;
 import com.jdd.sample.studyapp.ui.DataDisplayActivity;
@@ -68,6 +69,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, SqliteActivity.class));
     }
 
+    public void goAnimationActivity(View view){
+        startActivity(new Intent(this, AnimationActivity.class));
+    }
 
     @Override
     protected void onRestart() {

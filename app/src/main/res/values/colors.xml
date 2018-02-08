@@ -10,6 +10,7 @@
     <color name="colorPrimaryDark">#b2b2b2</color>
     <color name="colorAccent">#0F956F</color>
     <color name="colorAccentDark">#0E945F</color>
+    <color name="colorAction">#737373</color>
 
     <color name="divider">#dcdcdc</color>
     <color name="colorHint">#66000000</color>
