@@ -20,4 +20,7 @@
     <color name="appTextColorThird">#ff9b9b9b</color>
     <color name="appTextColorLabel">@color/colorHint</color>
 
+    <color name="tagBgNormal">@color/colorPrimaryDark</color>
+    <color name="tagBgPressed">@color/colorAction</color>
+
 </resources>

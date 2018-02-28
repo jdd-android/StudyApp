@@ -64,4 +64,9 @@
         android:onClick="goAnimationActivity"
         android:text="go animation activity" />
 
+    <TextView
+        style="@style/Button"
+        android:onClick="goCustomViewActivity"
+        android:text="go customView activity" />
+
 </LinearLayout>

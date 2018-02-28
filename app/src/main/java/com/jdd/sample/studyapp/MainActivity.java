@@ -16,6 +16,7 @@ import com.jdd.sample.studyapp.ui.JsonActivity;
 import com.jdd.sample.studyapp.ui.ListActivity;
 import com.jdd.sample.studyapp.ui.ProviderActivity;
 import com.jdd.sample.studyapp.ui.SqliteActivity;
+import com.jdd.sample.studyapp.ui.customview.CustomViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -71,6 +72,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void goAnimationActivity(View view){
         startActivity(new Intent(this, AnimationActivity.class));
+    }
+
+    public void goCustomViewActivity(View view){
+        startActivity(new Intent(this, CustomViewActivity.class));
     }
 
     @Override

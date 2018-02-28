@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jdd.sample.studyapp.ui.customview.CustomViewActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <com.jdd.sample.studyapp.ui.customview.TagLayout
+        android:id="@+id/tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="6dp"
+        app:tag_layout="@layout/layout_tag_view"
+        app:tag_margin_horizontal="2dp"
+        app:tag_margin_vertical="4dp" />
+
+</LinearLayout>
