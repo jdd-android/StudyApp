@@ -166,6 +166,33 @@
                 android:layout_height="wrap_content"
                 android:text="属性动画开始" />
 
+
+            <com.jdd.sample.studyapp.animation.AnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="32dp"
+                android:background="#11000000" />
+
+            <EditText
+                android:id="@+id/et_value_array"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="输入数值变化区间，空格分开" />
+
+            <EditText
+                android:id="@+id/et_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="输入动画时间"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btn_execute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="执行" />
+
         </LinearLayout>
 
     </ScrollView>

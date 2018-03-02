@@ -5,6 +5,7 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.TypeEvaluator;
 import android.animation.ValueAnimator;
+import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Point;
 import android.graphics.drawable.AnimationDrawable;
@@ -33,6 +34,7 @@ import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -65,6 +67,7 @@ public class AnimationActivity extends BaseActivity {
         initTweenAnimation();
         initObjectAnimation();
         initCustomObjectAnimation();
+        initAnimationView();
     }
 
     @Override
@@ -390,4 +393,60 @@ public class AnimationActivity extends BaseActivity {
             return new Point(x, y);
         }
     }
+
+
+    private void initAnimationView() {
+        AnimationView animationView = findViewById(R.id.animation_view);
+        EditText animationValueEt = findViewById(R.id.et_value_array);
+        EditText animationDurationEt = findViewById(R.id.et_duration);
+
+        animationValueEt.setText("0 300 150 300 0");
+        animationDurationEt.setText("5000");
+
+        findViewById(R.id.btn_execute).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String valueArrayStr = animationValueEt.getText().toString();
+                float[] valueArray = splitValue(valueArrayStr);
+                if (valueArray == null) {
+                    return;
+                }
+                int duration = str2Int(animationDurationEt.getText().toString(), 1000);
+
+                animationView.setValueArray(valueArray);
+                animationView.setDuration(duration);
+                animationView.setInterpolator(currentInterpolator);
+                animationView.start();
+            }
+        });
+    }
+
+    private float[] splitValue(String valueArrayStr) {
+        String[] split = valueArrayStr.split(" ");
+        float[] result = new float[split.length];
+
+        for (int i = 0; i < split.length; i++) {
+            try {
+                result[i] = Float.parseFloat(split[i]);
+            } catch (NumberFormatException e) {
+                Toast.makeText(this, "数值解析失败", Toast.LENGTH_SHORT).show();
+                return null;
+            }
+        }
+        return result;
+    }
+
+    private int str2Int(String str, int defaultValue) {
+        try {
+            return Integer.parseInt(str);
+        } catch (NumberFormatException e) {
+            return defaultValue;
+        }
+    }
+
+    public static int dp2px(Context context, float dpValue) {
+        final float scale = context.getResources().getDisplayMetrics().density;
+        return (int) (dpValue * scale + 0.5f);
+    }
+
 }

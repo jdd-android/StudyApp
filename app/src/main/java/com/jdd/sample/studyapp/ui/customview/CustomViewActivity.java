@@ -28,7 +28,7 @@ public class CustomViewActivity extends BaseActivity {
             TextView tagTv = view.findViewById(R.id.tv_tag);
             tagTv.setText(tag);
         });
-        tagLayout.setTags("百度", "阿里巴巴", "腾讯", "京东", "小米", "美团", "滴滴", "淘宝", "Google",
+        tagLayout.setTags("百度", "阿里巴巴", "腾讯", "京东", "小米", "美团", "滴滴", "奖多多科技有限公司", "淘宝", "Google",
                 "这是一个长度很长的 TAG，必需要换行才行，幺幺，切克闹，煎饼果子来一套");
     }
 
