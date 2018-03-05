@@ -69,4 +69,9 @@
         android:onClick="goCustomViewActivity"
         android:text="go customView activity" />
 
+    <TextView
+        style="@style/Button"
+        android:onClick="goTouchEventActivity"
+        android:text="go touchEvent activity" />
+
 </LinearLayout>

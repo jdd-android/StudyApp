@@ -52,6 +52,9 @@
         <activity
             android:name=".ui.customview.CustomViewActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".touchevent.TouchEventActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <service android:name=".service.DownloadService" />
         <service android:name=".service.DownloadIntentService" />
