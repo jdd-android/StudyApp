@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.jdd.sample.studyapp.animation.AnimationActivity;
 import com.jdd.sample.studyapp.data.Person;
+import com.jdd.sample.studyapp.room.RoomActivity;
 import com.jdd.sample.studyapp.touchevent.TouchEventActivity;
 import com.jdd.sample.studyapp.ui.BroadcastActivity;
 import com.jdd.sample.studyapp.ui.DataDisplayActivity;
@@ -81,6 +82,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void goTouchEventActivity(View view){
         startActivity(new Intent(this, TouchEventActivity.class));
+    }
+
+    public void goRoomActivity(View view){
+        startActivity(new Intent(this, RoomActivity.class));
     }
 
     @Override

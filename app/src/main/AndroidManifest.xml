@@ -55,6 +55,9 @@
         <activity
             android:name=".touchevent.TouchEventActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".room.RoomActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <service android:name=".service.DownloadService" />
         <service android:name=".service.DownloadIntentService" />

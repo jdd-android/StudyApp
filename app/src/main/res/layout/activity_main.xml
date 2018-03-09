@@ -74,4 +74,9 @@
         android:onClick="goTouchEventActivity"
         android:text="go touchEvent activity" />
 
+    <TextView
+        style="@style/Button"
+        android:onClick="goRoomActivity"
+        android:text="go room activity" />
+
 </LinearLayout>
