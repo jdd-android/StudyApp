@@ -16,67 +16,80 @@
         android:elevation="4dp"
         app:titleTextColor="@color/appTextColorPrimary" />
 
-    <Button
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="goDownloadActivity"
-        android:text="go download service activity" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="goBroadcastActivity"
-        android:text="go broadcast activity" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="goProviderActivity"
-        android:text="go provider activity" />
+            <TextView
+                style="@style/Button"
+                android:onClick="goDownloadActivity"
+                android:text="go download service activity" />
 
-    <TextView
-        style="@style/Button"
-        android:onClick="goDataActivity"
-        android:text="go data activity" />
+            <TextView
+                style="@style/Button"
+                android:onClick="goBroadcastActivity"
+                android:text="go broadcast activity" />
 
-    <TextView
-        style="@style/Button"
-        android:onClick="goListActivity"
-        android:text="go list activity" />
+            <TextView
+                style="@style/Button"
+                android:onClick="goProviderActivity"
+                android:text="go provider activity" />
 
-    <TextView
-        style="@style/Button"
-        android:onClick="goJsonActivity"
-        android:text="go json activity" />
+            <TextView
+                style="@style/Button"
+                android:onClick="goDataActivity"
+                android:text="go data activity" />
 
-    <TextView
-        style="@style/Button"
-        android:onClick="goFragmentActivity"
-        android:text="go fragment activity" />
+            <TextView
+                style="@style/Button"
+                android:onClick="goListActivity"
+                android:text="go list activity" />
 
-    <TextView
-        style="@style/Button"
-        android:onClick="goSqliteActivity"
-        android:text="go sqlite activity" />
+            <TextView
+                style="@style/Button"
+                android:onClick="goJsonActivity"
+                android:text="go json activity" />
 
-    <TextView
-        style="@style/Button"
-        android:onClick="goAnimationActivity"
-        android:text="go animation activity" />
+            <TextView
+                style="@style/Button"
+                android:onClick="goFragmentActivity"
+                android:text="go fragment activity" />
 
-    <TextView
-        style="@style/Button"
-        android:onClick="goCustomViewActivity"
-        android:text="go customView activity" />
+            <TextView
+                style="@style/Button"
+                android:onClick="goSqliteActivity"
+                android:text="go sqlite activity" />
 
-    <TextView
-        style="@style/Button"
-        android:onClick="goTouchEventActivity"
-        android:text="go touchEvent activity" />
+            <TextView
+                style="@style/Button"
+                android:onClick="goAnimationActivity"
+                android:text="go animation activity" />
 
-    <TextView
-        style="@style/Button"
-        android:onClick="goRoomActivity"
-        android:text="go room activity" />
+            <TextView
+                style="@style/Button"
+                android:onClick="goCustomViewActivity"
+                android:text="go customView activity" />
 
+            <TextView
+                style="@style/Button"
+                android:onClick="goTouchEventActivity"
+                android:text="go touchEvent activity" />
+
+            <TextView
+                style="@style/Button"
+                android:onClick="goRoomActivity"
+                android:text="go room activity" />
+
+            <TextView
+                style="@style/Button"
+                android:onClick="goDataBindActivity"
+                android:text="go data bind activity" />
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

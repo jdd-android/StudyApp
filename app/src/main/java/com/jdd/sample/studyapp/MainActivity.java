@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.jdd.sample.studyapp.animation.AnimationActivity;
 import com.jdd.sample.studyapp.data.Person;
+import com.jdd.sample.studyapp.databind.DataBindActivity;
 import com.jdd.sample.studyapp.room.RoomActivity;
 import com.jdd.sample.studyapp.touchevent.TouchEventActivity;
 import com.jdd.sample.studyapp.ui.BroadcastActivity;
@@ -86,6 +87,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void goRoomActivity(View view){
         startActivity(new Intent(this, RoomActivity.class));
+    }
+
+    public void goDataBindActivity(View view){
+        startActivity(new Intent(this, DataBindActivity.class));
     }
 
     @Override

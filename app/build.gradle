@@ -20,6 +20,9 @@ android {
         checkReleaseBuilds false
         abortOnError false
     }
+    dataBinding {
+        enabled = true
+    }
     buildTypes {
         release {
             minifyEnabled false
